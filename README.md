@@ -72,6 +72,8 @@ Network Services-
 • Domain Name Service-Route53
 • Direct Connect
 
+
+
 S3-
 • Object Storage with durability of 99.999999999%, 11 9's
 • Infinitely scaling storage
@@ -79,3 +81,21 @@ S3-
 • S3 is a global service but buckets are created in specific regions
 • Globally unique bucket names
 
+EC2-
+• Most Popular AWS offering
+• Infrastructure as a code service
+• Provides rented Virtual Machines
+• EC2 uses EBS and instance store to store data
+• EC2 uses ELB to distribute data
+• EC2 uses autoscaling for scaling purpose
+• Bootstrapping can be done using userdata scripts
+
+EC2 Instance types-
+• t2.micro
+• t2.xlarge
+• c5d.4xlarge
+• r5.16xlarge
+• m5.8xlarge
+
+
+r5
