@@ -72,5 +72,10 @@ Network Services-
 • Domain Name Service-Route53
 • Direct Connect
 
+S3-
+• Object Storage with durability of 99.999999999%, 11 9's
+• Infinitely scaling storage
+• Can keep files in buckets
+• S3 is a global service but buckets are created in specific regions
+• Globally unique bucket names
 
-![IMG-20231127-WA0057](https://github.com/userramanujan/notes/assets/145014171/b5a59ca6-563e-4e49-b4e9-e7631d5a7621)
