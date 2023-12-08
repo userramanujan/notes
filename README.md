@@ -25,7 +25,7 @@ Types of clouds- Public cloud , Private cloud and Hybrid cloud
 • Cheaper than private cloud
 • Utitzes shared infrastructure
 • Supports multiple customers
-• Requires nigher level of secunty
+• Requires higher level of security
 • Shared servers
 • No Dedicated proactive monitoring
 • Fixed-cost
