@@ -1,4 +1,4 @@
-![image](https://github.com/userramanujan/notes/assets/145014171/f2be6890-b3e9-4fc9-b0c0-3866dc1181d4)![image](https://github.com/userramanujan/notes/assets/145014171/6a028f77-7301-4e87-b5ea-4e219549b37b)![image](https://github.com/userramanujan/notes/assets/145014171/28db0c9e-53c5-4eae-9432-1f424e5f61c8)what is cloud computing?
+what is cloud computing?
 Cloud computing is the delivery of computing services including servers, storage, databases, networking, software, analytics, and intelligence-over the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale
 
 Benifits of cloud-
