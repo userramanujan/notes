@@ -1,4 +1,4 @@
-what is cloud computing?
+![image](https://github.com/userramanujan/notes/assets/145014171/f2be6890-b3e9-4fc9-b0c0-3866dc1181d4)![image](https://github.com/userramanujan/notes/assets/145014171/6a028f77-7301-4e87-b5ea-4e219549b37b)![image](https://github.com/userramanujan/notes/assets/145014171/28db0c9e-53c5-4eae-9432-1f424e5f61c8)what is cloud computing?
 Cloud computing is the delivery of computing services including servers, storage, databases, networking, software, analytics, and intelligence-over the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale
 
 Benifits of cloud-
@@ -112,10 +112,41 @@ step3 - Installing a server -
      • After connecting to the instance1 write "sudo su" to go into root user.
      • Then write "sudo apt update" to install all necessarey updates to our VM.
      • Then write "sudo apt install nginx" then press "y" to install a server to our VM
-     • output-
 step7 -Creating a sample html file to be displayed on our website
     • Then write "cd /var/www/html" which is the location of an html file in our VM.
     • Then write 'echo "This is VM1" > index.html' which basically write a sample text into our indexx.html file which is loacte in our VM
+    • output instance 1 -![Screenshot 2023-12-08 102842](https://github.com/userramanujan/notes/assets/145014171/c05a6ec7-2564-4f81-90ca-907298406663)
+
 step8 -Do similar steps with instance2
-step9 - creating an Application load balancer-
-      • 
+step9 - creating a Target group-
+      • Here we are goung to create a group of targatted instances
+      • Go to "Target Group" option available in "load balancing" section
+      • Create a new target group with  name "NewTarget"
+      • Then click on "Next".
+      • Then select the needed instances to be targeted. and include them as pending below
+      • Click on "Create target Group".
+      • Then refresh the page several times to gett the status of instance as "Healthy".
+      • Output- ![Screenshot 2023-12-08 105510](https://github.com/userramanujan/notes/assets/145014171/3d2ade16-a4c9-4ebc-a302-88b8c0a1d8d5)
+
+step10 - creating a security group_
+      • Click on "create Security Groups" and give a name and description to your security group
+      • Add an inbound rule to allow all traffic and source from anywhere IPv4
+      • click on "create security group"
+      • Output- ![Screenshot 2023-12-08 104807](https://github.com/userramanujan/notes/assets/145014171/93723989-a928-4056-a9dd-15d8e30e44e6)
+
+step10 - creating a load balancer-
+      • click on "load balancer" available in "load balancing" section
+      • click on "Create load balancer" and create an application load balancer
+      • Give a name your load balancer
+      • Then select the availability zones
+      • Then select the security group thata we have created perviously
+      • Then select the target group that wehave created.
+      • Then click on create load balancer
+      • Output- ![Screenshot 2023-12-08 105634](https://github.com/userramanujan/notes/assets/145014171/9c35fcf8-b6ce-410f-a18f-8aaf27476b6d)
+
+step11 - Checking our load balacer-
+      • copy the DNS name of the loadbalancer and open it in new tab 
+      • output1 -![Screenshot 2023-12-08 105955](https://github.com/userramanujan/notes/assets/145014171/48bd16fc-3469-4dfd-8839-6b84f51e3599)
+      • Then again refresh the page
+      • output2 - ![Screenshot 2023-12-08 105940](https://github.com/userramanujan/notes/assets/145014171/37dd07e8-f277-4bf0-aaa7-69753ee56f44)
+      • We can see that  the traffic is distributing once it goes to instance1 and then to instance2 and similar process happpens when more then one instances are there.
