@@ -9,7 +9,7 @@ Cloud computing is the delivery of computing services including servers, storage
 • Advanced security
 • Data loss prevention
 
-Disadvantages of cloud-
+**Disadvantages of cloud**-
 • risk of vendor lock-in
 • less control over underlying cloud infrastructure
 • concerns about security risks like data privacy and online threats
@@ -18,7 +18,7 @@ Disadvantages of cloud-
 
 Types of clouds- Public cloud , Private cloud and Hybrid cloud
 
-Public Cloud-
+**Public Cloud-**
 • Hosted at Service provider Site.
 • Supports connectivity over intemet
 • Suitable for information not very sensitive
@@ -31,7 +31,7 @@ Public Cloud-
 • Fixed-cost
 • Multitenant architecture
 
-Private Cloud-
+**Private Cloud-**
 • Hosted at Enterprise or Service provider Site
 • Supports connectivity over Internet Private network (WAN)
 • Suitable for very sensitive information
@@ -43,7 +43,7 @@ Private Cloud-
 • Dedicated proactive monitoring
 • Dedicated customer architecture
 
-Hybrid cloud-
+**Hybrid cloud-**
 • combination of both public and private cloud
 • shared security responsibilities
 • helps maintain higher controls over sensitive data and processes
@@ -53,7 +53,7 @@ Cloud service modals-
 • Paas
 • Saas
 
-Amazon Web Services-
+**Amazon Web Services-**
 Amazon Web Services(AWS) is the world's most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally.
 
 Computer services-
@@ -61,27 +61,25 @@ Computer services-
 • ECS/EKS-Containerized Services
 • Lambda-Serverless
 
-Storage Services-
+**Storage Services-**
 • Simple Storage Services-S3(Object Storage)
 • Elastic Block Store-EBS
 • Elastic File System-EFS(Shared File system)
 • Archival Services-Glacier
 
-Network Services-
+**Network Services-**
 • Virtual Private Cloud-VPC
 • Domain Name Service-Route53
 • Direct Connect
 
-
-
-S3-
+**S3-**
 • Object Storage with durability of 99.999999999%, 11 9's
 • Infinitely scaling storage
 • Can keep files in buckets
 • S3 is a global service but buckets are created in specific regions
 • Globally unique bucket names
 
-EC2-
+**EC2-**
 • Most Popular AWS offering
 • Infrastructure as a code service
 • Provides rented Virtual Machines
@@ -90,15 +88,45 @@ EC2-
 • EC2 uses autoscaling for scaling purpose
 • Bootstrapping can be done using userdata scripts
 
-EC2 Instance types-
+**EC2 Instance types-**
 • t2.micro
 • t2.xlarge
 • c5d.4xlarge
 • r5.16xlarge
 • m5.8xlarge
 
+**ELB(Elastic Load Balancer)-**
+  • implementation of horizontal scaling
+  • required high availability
+  • Types of load balancers-
+     • Classic load balancers -Layer 4 & 7
+     • Appliccation load balancers - Layer 7
+     • Network load balancer -Layer 4
 
-Steps for hosting a sample web page with  a load balancer-
+**Autoscaling-**
+  • Self healing implementation for dynamic loads
+  • can create  or delete instances automatically
+  • Types of scalings-
+    • Simple/Step scaling
+    • Target Trackling
+    • Scheduled Scaling
+
+**AWS CLI(Command Line Interface)-**
+  • To interact wuith AWS services using commands in command line shell
+  • Direct access to public APIs
+  • Its open source and an alternative to AWS Management Console
+  • AWS CLI is build  on AWS SDK for Python
+
+#Docker- Its a service in which help to run various apps that are packaged in conntainers and can be deployed on any OS without  actually installl each of them
+
+**AWS Conatinerization-**
+  • ECS- Elastic Container Service
+  • EKS- Elastic Kubernetes Service
+  • Fargate- Amazon's serverless container platform
+
+#CDN- Cloud Delivery Network
+
+**Steps for hosting a sample web page with  a load balancer-**
 step1 - Open your AWS console
 step2 - Creating VM(Virtual Machine)-
     • create 2 VMs named instance 1, instance 2 respectively with ubuntu AMI.
