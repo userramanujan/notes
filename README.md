@@ -98,4 +98,24 @@ EC2 Instance types-
 • m5.8xlarge
 
 
-r5
+Steps for hosting a sample web page with  a load balancer-
+step1 - Open your AWS console
+step2 - Creating VM(Virtual Machine)-
+    • create 2 VMs named instance 1, instance 2 respectively with ubuntu AMI.
+    • Set t2.micro as the instance type.
+    • Create a new key pair named "newkey"
+    • Also allow https and http traffic from internet
+    • After that click launch instance.
+    • output-![Screenshot 2023-12-08 095755](https://github.com/userramanujan/notes/assets/145014171/4a153003-77c3-4e25-a0a1-4849e6b644fc)
+step3 - Installing a server -
+     • Connect to instance1 by selecting it and the clicking on the "connect" option 
+     • After connecting to the instance1 write "sudo su" to go into root user.
+     • Then write "sudo apt update" to install all necessarey updates to our VM.
+     • Then write "sudo apt install nginx" then press "y" to install a server to our VM
+     • output-
+step7 -Creating a sample html file to be displayed on our website
+    • Then write "cd /var/www/html" which is the location of an html file in our VM.
+    • Then write 'echo "This is VM1" > index.html' which basically write a sample text into our indexx.html file which is loacte in our VM
+step8 -Do similar steps with instance2
+step9 - creating an Application load balancer-
+      • 
